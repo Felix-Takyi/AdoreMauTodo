@@ -2,6 +2,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f5f6fa;
     background-image: url(IMG_9337.jpeg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     padding: 40px;
