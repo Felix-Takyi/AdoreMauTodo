@@ -3,7 +3,9 @@ let items = JSON.parse(localStorage.getItem('shoppingList')) || [];
 function saveToLocal() {
   localStorage.setItem('shoppingList', JSON.stringify(items));
 }
-
+function updateItemCount() {
+  document.getElementById('itemCount').textContent = `Total items: ${items.length}`;
+}
 function renderList() {
   const list = document.getElementById('itemList');
   list.innerHTML = '';
@@ -16,6 +18,7 @@ function renderList() {
         </div>
       </li>`;
   });
+  updateItemCount();
 }
 
 function addItem() {
