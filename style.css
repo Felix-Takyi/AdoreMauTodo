@@ -3,6 +3,7 @@ body {
     background: #f5f6fa;
     background-image: url(mauCart.jpeg);
     background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     padding: 40px;
